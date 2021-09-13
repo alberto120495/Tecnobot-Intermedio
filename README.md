@@ -1,21 +1,19 @@
 <h1>print("Temario Robotica 2da parte 👋");</h1>
 
+- Switch...Case
 
--Switch...Case
+- Liquid Crystal Display (LCD)
 
--Liquid Crystal Display (LCD)
+- Estructura de control for
 
--Estructura de control for
+- while / do while
 
--while / do while
+- Teclado numérico
 
--Teclado numérico
-
--Arreglos, arrays, vectores
+- Arreglos, arrays, vectores
 
 - Funciones
 
--Módulo Bluetooth
+- Módulo Bluetooth
 
--Creación de app (ÚNICAMENTE DISPOSITIVOS ANDROID, NO FUNCIONA EN APPLE)
-
+- Creación de app (ÚNICAMENTE DISPOSITIVOS ANDROID, NO FUNCIONA EN APPLE)
