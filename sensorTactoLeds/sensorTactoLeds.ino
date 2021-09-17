@@ -1,8 +1,8 @@
-int sensor = 26; //Variable de conexion del sensor
+int sensores = 26; //Variable de conexion del sensor
 void setup() {
   Serial.begin(9600); //Iniciar el puerto serie 
   //Sensor
-  pinMode(sensor, INPUT);
+  pinMode(sensores, INPUT);
   //LEDS
   pinMode(2,OUTPUT);
   pinMode(3,OUTPUT);
