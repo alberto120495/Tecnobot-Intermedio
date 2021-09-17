@@ -1,4 +1,5 @@
-int sensores = 26; //Variable de conexion del sensor
+int sensores = 26;
+int variable = 0; //Variable de conexion del sensor
 void setup() {
   Serial.begin(9600); //Iniciar el puerto serie 
   //Sensor
