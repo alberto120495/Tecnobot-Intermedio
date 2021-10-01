@@ -1,5 +1,6 @@
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x27, 16, 2); //0x3F
+
 void setup() {
   lcd.init(); //Inicializar el LCD
   lcd.backlight(); //Encender la luz de fondo
