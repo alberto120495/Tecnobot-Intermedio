@@ -18,7 +18,7 @@ void loop() {
     }
   */
 
-Serial.println("Incremento While");
+  Serial.println("Incremento While");
   int i = 1; // Variable con valor 1
   while ( i <= 10 ) {
     Serial.println(i);
@@ -27,7 +27,7 @@ Serial.println("Incremento While");
   }
 
 
-Serial.println("Decremento While");
+  Serial.println("Decremento While");
   int j = 10;
   while (j >= 1) {
     Serial.println(j);
