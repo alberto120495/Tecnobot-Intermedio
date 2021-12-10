@@ -34,7 +34,9 @@ void setup() {
 
 void loop() {
   char tecla = keypad.getKey(); //Vamos a almacenar el tecla el valor que se presiono usando getKey();
+  
   if (tecla) { //Comparacion de si se presiono una tecla
+    Serial.println(tecla);
     clave[indice] = tecla; //Almacenamos en posicion [n] la tecla que presionamos
     indice++;
   }
