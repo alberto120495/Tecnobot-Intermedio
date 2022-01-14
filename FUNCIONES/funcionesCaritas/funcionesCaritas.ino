@@ -18,15 +18,15 @@ void loop() {
   delay(2000);
 }
 
-void sonrisa() {
-  for (int s = 0; s <= 6; s++) {
-    digitalWrite(leds[s], HIGH);
-  }
-}
-
 void triste() {
   for (int t = 4; t <= 10; t++) {
     digitalWrite(leds[t], HIGH);
+  }
+}
+
+void sonrisa() {
+  for (int s = 0; s <= 6; s++) {
+    digitalWrite(leds[s], HIGH);
   }
 }
 
