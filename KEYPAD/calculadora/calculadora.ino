@@ -15,12 +15,46 @@ char teclas[FILAS][COLS] = {
 byte pinesFilas[FILAS] = {46, 47, 48, 49};
 byte pinesColumnas[COLS] = {50, 51, 52, 53};
 
+Keypad keypad = Keypad(makeKeymap(teclas), pinesFilas, pinesColumnas, FILAS, COLS);
+
+//Variables para almacenar los valores
+long Num1, Num2, Number;
+char tecla, operacion;
+boolean resultado = false;
+
+
 void setup() {
-
-
+  lcd.init();
+  lcd.backlight();
+  lcd.print("SUPER CALCULADORA");
+  lcd.setCursor(0, 1);
+  lcd.print("TECNOBOTICS");
+  delay(2000);
+  lcd.clear();
 }
 
 void loop() {
+  tecla = keypad.getKey();
 
+  //Usaremos funciones: detectarBotones, calcularResultado, mostrarResultado
 
+  if (tecla != NO_KEY) {
+    detectarBotones();
+  }
+
+  if (resultado == true) {
+    calcularResultado();
+  }
+
+  mostrarResultado();
+
+}
+
+void detectarBotones() {
+}
+
+void calcularResultado() {
+}
+
+void mostrarResultado() {
 }
