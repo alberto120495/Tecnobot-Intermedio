@@ -51,10 +51,110 @@ void loop() {
 }
 
 void detectarBotones() {
+  lcd.clear();
+  if (tecla == '*') {
+    Number = 0;
+    Num1 = 0;
+    Num2 = 0;
+    resultado = false;
+  }
+
+  if (tecla == '1') {
+    if (Number == 0) {
+      Number = 1;
+    } else {
+      Number = (Number * 10) + 1;
+    }
+  }
+
+  if (tecla == '2') {
+    if (Number == 0) {
+      Number = 2;
+    } else {
+      Number = (Number * 10) + 2;
+    }
+  }
+
+  if (tecla == '3') {
+    if (Number == 0) {
+      Number = 3;
+    } else {
+      Number = (Number * 10) + 3;
+    }
+  }
+
+  if (tecla == '4') {
+    if (Number == 0) {
+      Number = 4;
+    } else {
+      Number = (Number * 10) + 4;
+    }
+  }
+
+  if (tecla == '5') {
+    if (Number == 0) {
+      Number = 5;
+    } else {
+      Number = (Number * 10) + 5;
+    }
+  }
+
+  if (tecla == '6') {
+    if (Number == 0) {
+      Number = 6;
+    } else {
+      Number = (Number * 10) + 6;
+    }
+  }
+
+  if (tecla == '7') {
+    if (Number == 0) {
+      Number = 7;
+    } else {
+      Number = (Number * 10) + 7;
+    }
+  }
+
+  if (tecla == '8') {
+    if (Number == 0) {
+      Number = 8;
+    } else {
+      Number = (Number * 10) + 8;
+    }
+  }
+
+  if (tecla == '9') {
+    if (Number == 0) {
+      Number = 9;
+    } else {
+      Number = (Number * 10) + 9;
+    }
+  }
+
+  if (tecla == '0') {
+    if (Number == 0) {
+      Number = 0;
+    } else {
+      Number = (Number * 10) + 0;
+    }
+  }
+  
 }
 
 void calcularResultado() {
 }
 
 void mostrarResultado() {
+  lcd.setCursor(0, 0);
+  lcd.print(Num1);
+  lcd.print(operacion);
+  lcd.print(Num2);
+
+  if (resultado == true) {
+    lcd.print(" =");
+    lcd.print(Number);
+  }
+  lcd.setCursor(0, 1);
+  lcd.print(Number);
+
 }
