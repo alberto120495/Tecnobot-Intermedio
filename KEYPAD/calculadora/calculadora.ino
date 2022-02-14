@@ -138,10 +138,46 @@ void detectarBotones() {
       Number = (Number * 10) + 0;
     }
   }
-  
+
+  if (tecla == 'A' || tecla == 'B' || tecla == 'C' || tecla == 'D') {
+    Num1 = Number;
+    Number = 0;
+    if (tecla == 'A') {
+      operacion = '+';
+    }
+    if (tecla == 'B') {
+      operacion = '-';
+    }
+    if (tecla == 'C') {
+      operacion = '*';
+    }
+    if (tecla == 'D') {
+      operacion = '/';
+    }
+    delay(100);
+  }
+  if (tecla == '#') {
+    Num2 = Number;
+    resultado = true;
+  }
 }
 
 void calcularResultado() {
+  if (operacion == '+') {
+    Number = Num1 + Num2;
+  }
+  
+  if (operacion == '-') {
+    Number = Num1 - Num2;
+  }
+  
+  if (operacion == '*') {
+    Number = Num1 * Num2;
+  }
+  
+  if (operacion == '/') {
+    Number = Num1 / Num2;
+  }
 }
 
 void mostrarResultado() {
@@ -156,5 +192,4 @@ void mostrarResultado() {
   }
   lcd.setCursor(0, 1);
   lcd.print(Number);
-
 }
