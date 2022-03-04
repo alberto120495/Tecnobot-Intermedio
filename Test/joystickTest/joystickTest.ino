@@ -1,3 +1,4 @@
+
 //Motores
 int izquierdoDelante = 40;
 int izquierdoAtras = 41;
@@ -61,10 +62,10 @@ void loop() {
   //Izquierda
   if (x >= 0 && x < 480 ) {
     digitalWrite(derechoDelante, HIGH);
-    
+
     Serial.println("IZQUIERDA");
   } else {
-     digitalWrite(izquierdoDelante, LOW);
+    digitalWrite(izquierdoDelante, LOW);
   }
 
 
