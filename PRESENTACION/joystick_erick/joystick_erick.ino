@@ -1,3 +1,19 @@
+/*
+****************CONEXIONES JOYSTICK - ARDUINO****************
+Cable VERDE: A0
+Cable AZUL: A1
+Cable NEGRO: GND
+Cable ROJO: 5V
+
+*************** MODO DE VER EL JOYSTICK ************************
+En la clase les mencione que se ve con los cables viendo a la izquierda,
+cometi un ERROR, los cables tiene que estar viendo hacia ustedes.
+
+EL CODIGO YA ESTA PROBADO Y FUNCIONANDO BIEN,
+Pruebenlo completo y usando sus motores.
+*/
+
+
 //Joystick
 int x;
 int y;
@@ -23,17 +39,13 @@ void loop() {
   x = analogRead(A0);
   y = analogRead(A1);
 
-
   Serial.println("");
   Serial.print("x: ");
   Serial.print(x);
   
-
-
   Serial.println("");
   Serial.print("y: ");
   Serial.print(y);
-
 
 
   //Detener motores
