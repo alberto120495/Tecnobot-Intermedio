@@ -4,6 +4,7 @@
 //A9 = 63 ->RX
 SoftwareSerial miBT(63, 62); // (RX, TX)   RX=63, TX=62
 int led = 5;
+
 void setup() {
   pinMode(led, OUTPUT);
   Serial.begin(9600); //Abrimos la comunicacion Serial
@@ -11,6 +12,7 @@ void setup() {
   //INICIALIZAR comunicacion serie del modulo Bluetooth
   miBT.begin(9600);
 }
+
 int lectura;
 void loop() {
   //Bluetooth a la computadora
@@ -29,10 +31,6 @@ void loop() {
     }
 
   }
-
-
-
-
   //Proceso inverso
   //Mandar informacion de la computadora al Bluetooth
   if (Serial.available()) {

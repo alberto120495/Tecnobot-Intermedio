@@ -8,7 +8,6 @@ int izquierdoAtras = 41;
 int derechoDelante = 39;
 int derechoAtras = 38;
 
-
 void setup() {
   pinMode(izquierdoAtras, OUTPUT);
   pinMode(izquierdoDelante, OUTPUT);
@@ -27,13 +26,10 @@ void loop() {
   Serial.println("");
   Serial.print("x: ");
   Serial.print(x);
-  
-
-
   Serial.println("");
   Serial.print("y: ");
   Serial.print(y);
-
+  Serial.println("");
 
 
   //Detener motores
@@ -42,6 +38,7 @@ void loop() {
     digitalWrite(derechoDelante, LOW);
     digitalWrite(izquierdoAtras, LOW);
     digitalWrite(derechoAtras, LOW);
+    Serial.println("ALTO");
   }
 
   //Avanzar Delante
