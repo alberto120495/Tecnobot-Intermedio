@@ -34,7 +34,7 @@ void loop() {
       Serial.println("led on");
       encender();
     }
-    
+
     if (lectura == 'a') {
       Serial.println("led off");
       apagar();
@@ -45,9 +45,9 @@ void loop() {
       digitalWrite(izquierdoDelante, HIGH);
       digitalWrite(derechoDelante, HIGH);
       Serial.println("DELANTE");
-    } 
+    }
 
-    
+
     //Detener motores
     if (lectura == '5') {
       digitalWrite(izquierdoDelante, LOW);
@@ -63,20 +63,20 @@ void loop() {
       digitalWrite(izquierdoAtras, HIGH);
       digitalWrite(derechoAtras, HIGH);
       Serial.println("ATRAS");
-    } 
+    }
 
     //Izquierda
     if (lectura == '4' ) {
       digitalWrite(derechoDelante, HIGH);
 
       Serial.println("IZQUIERDA");
-    } 
+    }
 
     //Derecha
     if (lectura == '6') {
       digitalWrite(izquierdoDelante, HIGH);
       Serial.println("DERECHA");
-    } 
+    }
 
   }
 }

@@ -1,0 +1,58 @@
+GAEL
+
+
+PROYECTO: 
+Calculadora funcional con encendido de leds.
+
+Componentes usados: 
+
+Teclado Matricial, Display (LCD -> Liquid Crystal Display), Leds.
+
+Funcionamiento: 
+
+El robot realiza las operaciones básicas: sumar, restar, multiplicar y dividir y mostrará el resultado en el Display.
+Cada vez que se presione una tecla numérica se indicará a través de los leds el valor presionado. 
+Por ejemplo si se presiona un 2, se iluminarán 2 leds, si se presiona un 5 se iluminarán 5 leds.
+
+La programación consta de 224 líneas de código 
+
+
+
+************************************************************************************************************************
+ERICK
+
+
+PROYECTO: 
+Uso de un control Joystick para controlar el robot.
+
+Componentes usados: 
+
+Motores y Joystick
+
+Funcionamiento: 
+Usaremos un joystick para poder manipular los motores del robot, esto es posible gracias a que el dispositivo funciona a través de coordenadas
+X & Y
+De acuerdo a la posición del joystick podremos obtener los datos y manipular la dirección de los motores mediante una lógica robusta. 
+No se utilizó ninguna librería externa para el funcionamiento de este programa. 
+
+La programación cuenta con 99 líneas de código.
+
+
+************************************************************************************************************************
+EMMANUEL
+
+
+PROYECTO: 
+Aplicación Móvil para controlar el robot.
+
+Componentes usados: 
+
+Motores, Leds, Bluetooth y teléfono celular.
+
+Funcionamiento: 
+Vinculamos un dispositivo Bluetooth conectado al robot con una aplicación que fue diseñada y programada desde cero, podremos manipular al robot para moverse
+hacia adelante, atrás, izquierda, derecha y detenerse.
+La aplicación además cuenta con dos botones para encender y apagar todos los LEDs delanteros.
+
+La programación de Arduino cuenta con 94 líneas de código más la programación en bloques de la aplicación móvil junto con el diseño.
+
