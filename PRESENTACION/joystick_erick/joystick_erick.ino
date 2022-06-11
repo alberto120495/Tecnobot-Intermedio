@@ -6,11 +6,9 @@ Cable NEGRO: GND
 Cable ROJO: 5V
 
 *************** MODO DE VER EL JOYSTICK ************************
-En la clase les mencione que se ve con los cables viendo a la izquierda,
-cometi un ERROR, los cables tiene que estar viendo hacia ustedes.
+La manera de suejetar el JOYSTICK es la siguiente:
+Los cables tienen que estar viendo hacia ustedes.
 
-EL CODIGO YA ESTA PROBADO Y FUNCIONANDO BIEN,
-Pruebenlo completo y usando sus motores.
 */
 
 

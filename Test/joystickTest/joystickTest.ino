@@ -30,6 +30,8 @@ void loop() {
   Serial.print("y: ");
   Serial.print(y);
   Serial.println("");
+ 
+
 
 
   //Detener motores
@@ -40,6 +42,8 @@ void loop() {
     digitalWrite(derechoAtras, LOW);
     Serial.println("ALTO");
   }
+
+  
 
   //Avanzar Delante
   if (y > 520 && y <= 1023) {
