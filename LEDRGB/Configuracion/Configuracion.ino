@@ -27,17 +27,17 @@ void loop() {
   analogWrite(red, 0);
   analogWrite(green, 255);
   analogWrite(blue, 255);
-  delay(2000);
+  delay(500);
   
   analogWrite(red, 255);
   analogWrite(green, 0);
   analogWrite(blue, 255);
-  delay(2000);
+  delay(500);
 
   analogWrite(red, 255);
   analogWrite(green, 255);
   analogWrite(blue, 0);
-  delay(2000);
+  delay(500);
   
   
 }
