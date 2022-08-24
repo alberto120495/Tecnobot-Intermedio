@@ -9,6 +9,9 @@
 #define Boton_1 0xBA45FF00
 #define Boton_2 0xB946FF00
 #define Boton_3 0xB847FF00
+#define Boton_4 0xBB44FF00
+#define Boton_5 0xBF40FF00
+
 
 int sensor = 6;
 int red =  11;
@@ -39,6 +42,12 @@ void loop() {
       Serial.print("BOTON 3");
       azul();
     }
+
+    if (value == Boton_4) {
+      Serial.print("BOTON 4");
+      morado();
+    }
+    
     IrReceiver.resume();
   }
   delay(100);
@@ -48,19 +57,22 @@ void rojo() {
   analogWrite(red, 0);
   analogWrite(green, 255);
   analogWrite(blue, 255);
-  delay(2000);
 }
 
 void verde() {
   analogWrite(red, 255);
   analogWrite(green, 0);
   analogWrite(blue, 255);
-  delay(2000);
 }
 
 void azul() {
   analogWrite(red, 255);
   analogWrite(green, 255);
   analogWrite(blue, 0);
-  delay(2000);
+}
+
+void morado() {
+  analogWrite(red, 86);
+  analogWrite(green, 255);
+  analogWrite(blue, 0);
 }
